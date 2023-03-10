@@ -9,3 +9,7 @@ ifneq ($(wildcard $(IH8SN_CONFIG_PATH)),)
 PRODUCT_COPY_FILES += \
     $(IH8SN_CONFIG_PATH):/system/etc/ih8sn.conf
 endif
+
+ifneq ($(filter sake,$(DEVICE)),)
+BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 200028160
+endif
