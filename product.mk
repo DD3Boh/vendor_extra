@@ -1,6 +1,7 @@
 # I hate Safety Net
 PRODUCT_PACKAGES += \
-    ih8sn
+    ih8sn \
+    SettingsGoogleFutureFaceEnroll
 
 DEVICE := $(subst lineage_,,$(TARGET_PRODUCT))
 IH8SN_CONFIG_PATH := $(LOCAL_PATH)/prebuilt/etc/ih8sn_$(DEVICE).conf
