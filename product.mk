@@ -12,4 +12,6 @@ endif
 
 ifneq ($(filter sake,$(DEVICE)),)
 BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 200028160
+
+PRODUCT_PACKAGES += init.sake.extra.rc
 endif
