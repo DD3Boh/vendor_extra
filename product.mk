@@ -16,3 +16,7 @@ endif
 
 #PRODUCT_PACKAGES += init.sake.extra.rc
 #endif
+
+ifeq ($(WITH_GMS),true)
+	include vendor/gapps/arm64/arm64-vendor.mk
+endif
